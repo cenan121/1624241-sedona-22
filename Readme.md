@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Гусейнов Санан](https://up.htmlacademy.ru/adaptive/22/user/1624241).
-* Наставник: `Неизвестно`.
+* Наставник: [Анна Лисененкова] (https://htmlacademy.ru/profile/ankhena).
 
 ---
 
