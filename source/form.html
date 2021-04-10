@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Седона</title>
+</head>
+
+<body class="page__body">
+  <header class="page-header">
+    <a class="page-header__logo">
+      <img src="img/logotype.svg" width="102" height="84" alt="логотип Седона">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a href="index.html">
+              Главная
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">
+              Фото и видео
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">
+              Форма отзыва
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">
+              HTML Academy
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="reviews">
+      <div class="reviews__wrapper">
+        <h1 class="reviews__title">
+          Оставьте свой отзыв
+        </h1>
+        <p class="reviews__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных
+          вами достопримечательностях
+        </p>
+        <form class="reviews__form" method="get" action="https://echo.htmlacademy.ru">
+          <fieldset class="reviews__group">
+            <legend class="reviews__group-title">Представьтесь</legend>
+            <p>
+              <label for="name">Имя*:</label>
+              <input class="reviews__name" id="name" type="text" name="name" placeholder="Петр">
+            </p>
+            <p>
+              <label for="surname">Фамилия*:</label>
+              <input class="reviews__surname" id="surname" type="text" name="surname" placeholder="Иванов">
+            </p>
+            <p>
+              <label for="middle-name">Отчество:</label>
+              <input class="reviews__middle-name" id="middle-name" type="text" name="middle-name"
+                placeholder="Отчество">
+            </p>
+          </fieldset>
+          <fieldset class="reviews__group">
+            <legend class="reviews__group-title">Контактная информация</legend>
+            <p>
+              <label for="tel">Контактный телефон*:</label>
+              <input class="reviews__tel" id="tel" type="tel" name="tel" placeholder="Введите телефон">
+            </p>
+            <p>
+              <label for="email">Ваш e-mail:</label>
+              <input class="reviews__email" id="email" type="email" name="email" placeholder="Введите e-mail">
+            </p>
+          </fieldset>
+          <fieldset class="reviews__group impression">
+            <legend class="reviews__group-title">Ваше общее впечатление</legend>
+            <ul class="impression__list">
+              <li class="impression__item">
+                <input class="impression__radio" type="radio" name="positive" id="positive" />
+                <label for="positive">Скорее положительное</label>
+              </li>
+              <li class="impression__item">
+                <input class="impression__radio" type="radio" name="negative" id="negative" />
+                <label for="negative">Скорее отрицательное</label>
+              </li>
+              <li class="impression__item">
+                <input class="impression__radio" type="radio" name="difficulty" id="difficulty" />
+                <label for="difficulty">Затрудняюсь ответить</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="reviews__group showplace">
+            <legend class="reviews__group-title">Посещенные достопримечательности:</legend>
+            <ul class="showplace__list">
+              <li class="showplace__item">
+                <input class="showplace__checkbox" type="checkbox" name="devils-bridge" id="devils-bridge" checked />
+                <label for="devils-bridge">Мост Дьявола</label>
+              </li>
+              <li class="showplace__item">
+                <input class="showplace__checkbox" type="checkbox" name="bell-rock" id="bell-rock" checked />
+                <label for="bell-rock">Гора-Колокол</label>
+              </li>
+              <li class="showplace__item">
+                <input class="showplace__checkbox" type="checkbox" name="slide-park" id="slide-park" checked />
+                <label for="slide-park">Слайд-парк</label>
+              </li>
+              <li class="showplace__item">
+                <input class="showplace__checkbox" type="checkbox" name="red-rocks" id="red-rocks" />
+                <label for="red-rocks">Красные скалы</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="reviews__group">
+            <p>
+              <label for="comment">Опишите свои эмоции</label>
+              <textarea class="reviews__letter" id="comment" name="comment" placeholder="Опишите подробно все свои восторги"></textarea>
+            </p>
+          </fieldset>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <p class="page-footer__hashtag">
+        #visitsedona
+      </p>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Вконтакте</a>
+          </li>
+          <li class="page-footer__socitem">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Фейсбук</a>
+          </li>
+          <li class="page-footer__socitem">
+            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Инстаграм</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано:</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
