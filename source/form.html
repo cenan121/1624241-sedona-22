@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Седона</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body class="page__body">
@@ -52,15 +53,15 @@
           <fieldset class="reviews__group">
             <legend class="reviews__group-title">Представьтесь</legend>
             <p>
-              <label for="name">Имя*:</label>
+              <label class="reviews__label" for="name">Имя*:</label>
               <input class="reviews__input" id="name" type="text" name="name" placeholder="Петр">
             </p>
             <p>
-              <label for="surname">Фамилия*:</label>
+              <label class="reviews__label" for="surname">Фамилия*:</label>
               <input class="reviews__input" id="surname" type="text" name="surname" placeholder="Иванов">
             </p>
             <p>
-              <label for="middle-name">Отчество:</label>
+              <label class="reviews__label" for="middle-name">Отчество:</label>
               <input class="reviews__input" id="middle-name" type="text" name="middle-name"
                 placeholder="Отчество">
             </p>
@@ -68,11 +69,11 @@
           <fieldset class="reviews__group">
             <legend class="reviews__group-title">Контактная информация</legend>
             <p>
-              <label for="tel">Контактный телефон*:</label>
+              <label class="reviews__label" for="tel">Контактный телефон*:</label>
               <input class="reviews__input reviews__input--tel" id="tel" type="tel" name="tel" placeholder="Введите телефон">
             </p>
             <p>
-              <label for="email">Ваш e-mail*:</label>
+              <label class="reviews__label" for="email">Ваш e-mail*:</label>
               <input class="reviews__input reviews__input--email" id="email" type="email" name="email" placeholder="Введите e-mail">
             </p>
           </fieldset>
@@ -80,16 +81,16 @@
             <legend class="reviews__group-title">Ваше общее впечатление</legend>
             <ul class="impression__list">
               <li class="impression__item">
-                <input class="impression__radio" type="radio" name="positive" id="positive" />
-                <label for="positive">Скорее положительное</label>
+                <input class="impression__radio" type="radio" name="positive" id="positive" checked/>
+                <label class="impression__label" for="positive">Скорее положительное</label>
               </li>
               <li class="impression__item">
                 <input class="impression__radio" type="radio" name="negative" id="negative" />
-                <label for="negative">Скорее отрицательное</label>
+                <label class="impression__label" for="negative">Скорее отрицательное</label>
               </li>
               <li class="impression__item">
                 <input class="impression__radio" type="radio" name="difficulty" id="difficulty" />
-                <label for="difficulty">Затрудняюсь ответить</label>
+                <label class="impression__label" for="difficulty">Затрудняюсь ответить</label>
               </li>
             </ul>
           </fieldset>
@@ -98,29 +99,30 @@
             <ul class="showplace__list">
               <li class="showplace__item">
                 <input class="showplace__checkbox" type="checkbox" name="devils-bridge" id="devils-bridge" checked />
-                <label for="devils-bridge">Мост Дьявола</label>
+                <label class="showplace__label" for="devils-bridge">Мост Дьявола</label>
               </li>
               <li class="showplace__item">
                 <input class="showplace__checkbox" type="checkbox" name="bell-rock" id="bell-rock" checked />
-                <label for="bell-rock">Гора-Колокол</label>
+                <label class="showplace__label  for="bell-rock">Гора-Колокол</label>
               </li>
               <li class="showplace__item">
                 <input class="showplace__checkbox" type="checkbox" name="slide-park" id="slide-park" checked />
-                <label for="slide-park">Слайд-парк</label>
+                <label class="showplace__label for="slide-park">Слайд-парк</label>
               </li>
               <li class="showplace__item">
                 <input class="showplace__checkbox" type="checkbox" name="red-rocks" id="red-rocks" />
-                <label for="red-rocks">Красные скалы</label>
+                <label class="showplace__label for="red-rocks">Красные скалы</label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="reviews__group">
+          <fieldset class="reviews__group feedback">
             <p>
-              <label for="comment">Опишите свои эмоции</label>
-              <textarea class="reviews__letter" id="comment" name="comment"
+              <label class="feedback__label" for="comment">Опишите свои эмоции</label>
+              <textarea class="feedback__letter" id="comment" name="comment"
                 placeholder="Опишите подробно все свои восторги"></textarea>
             </p>
           </fieldset>
+          <button class="reviews__submit" type="submit">Отправить отзыв</button>
         </form>
       </div>
     </section>
