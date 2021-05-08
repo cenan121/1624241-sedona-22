@@ -15,6 +15,21 @@
     width: 320px;
     height: 260px;
   }
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+  }
+}
+
+.advantages__box {
+  @media (min-width: @tablet-width) {
+    width: 256px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 400px;
+  }
 }
 
 .advantages__intro {
@@ -28,14 +43,35 @@
   line-height: 26px;
 }
 
+.advantages__list {
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 .advantages__item {
   list-style: none;
 }
 
+.advantages__item--service {
+  @media (min-width: @tablet-width) {
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+}
+
+
 .advantages__item--bridge {
   background-color: #81b3d2;
+  display: grid;
+  grid-template-columns: 1fr min-content;
+  grid-column-start: 1;
+  grid-column-end: -1;
 
-  &::after {
+  &::before {
     content: "";
     display: flex;
     background-image: url("../img/bridge.jpg");
@@ -79,6 +115,12 @@
 
 .advantages__description--dark {
   color: black;
+}
+
+.advantages__sublist {
+  padding: 0;
+  display: flex;
+  grid-template-columns: repeat(1, 3fr);
 }
 
 .advantages__subitem {

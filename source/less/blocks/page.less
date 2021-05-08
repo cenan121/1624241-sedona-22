@@ -6,12 +6,24 @@
 }
 
 .page__body {
-  display: grid;
-  grid-template-rows: min-content 1fr min-content;
-  align-content: start;
   min-width: 320px;
   min-height: 100%;
   margin: 0;
   color: #000000;
   text-transform: uppercase;
+}
+
+.page__wrapper {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+  }
 }

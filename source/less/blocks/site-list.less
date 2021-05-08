@@ -1,3 +1,10 @@
+.site-list {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .site-list__item {
   background-color: #81b3d2;
   list-style: none;
@@ -8,5 +15,19 @@
     line-height: 40px;
     font-weight: bold;
     color: white;
+
+    @media (min-width: @tablet-width) {
+      color: black;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    background-color: white;
+  }
+}
+
+.site-list__item--margin {
+  @media (min-width: @tablet-width) {
+    margin-left: 40px;
   }
 }
