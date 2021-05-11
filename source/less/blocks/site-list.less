@@ -1,7 +1,7 @@
 .site-list {
   @media (min-width: @tablet-width) {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
   }
 }
 
@@ -26,8 +26,8 @@
   }
 }
 
-.site-list__item--margin {
+.site-list__item:nth-child(4n+2) {
   @media (min-width: @tablet-width) {
-    margin-left: 40px;
+    margin-right: auto;
   }
 }
