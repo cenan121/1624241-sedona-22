@@ -1,3 +1,10 @@
+.page-footer__wrapper {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
 .page-footer__hashtag {
   font-weight: bold;
   font-size: 21px;
@@ -8,4 +15,8 @@
   font-size: 14px;
   line-height: 26px;
   font-weight: normal;
+}
+
+.page-footer__copyright {
+  .holder();
 }

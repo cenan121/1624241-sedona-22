@@ -1,3 +1,17 @@
+.feedback {
+  @media (min-width: @tablet-width) {
+    grid-column-start: 1;
+    grid-column-end: -1;
+
+    p {
+      @media (min-width: @tablet-width) {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+}
+
 .feedback__label {
   font-weight: bold;
   font-size: 18px;

@@ -4,10 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <title>Седона</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="css/style.css" rel="stylesheet">
 </head>
-
 <body class="page__body">
+<div class="page__wrapper">
   <header class="page-header">
     <a class="page-header__logo" href="https://htmlacademy.ru/intensive/adaptive">
       <img src="img/logotype.svg" width="102" height="84" alt="логотип Седона">
@@ -66,14 +67,14 @@
                 placeholder="Отчество">
             </p>
           </fieldset>
-          <fieldset class="reviews__group">
+          <fieldset class="reviews__group reviews__group--contacts">
             <legend class="reviews__group-title">Контактная информация</legend>
             <p>
               <label class="reviews__label" for="tel">Контактный телефон*:</label>
               <input class="reviews__input reviews__input--tel" id="tel" type="tel" name="tel" placeholder="Введите телефон">
             </p>
             <p>
-              <label class="reviews__label" for="email">Ваш e-mail*:</label>
+              <label class="reviews__label" for="email">Электронная почта:</label>
               <input class="reviews__input reviews__input--email" id="email" type="email" name="email" placeholder="Введите e-mail">
             </p>
           </fieldset>
@@ -103,15 +104,15 @@
               </li>
               <li class="showplace__item">
                 <input class="showplace__checkbox" type="checkbox" name="bell-rock" id="bell-rock" checked />
-                <label class="showplace__label  for="bell-rock">Гора-Колокол</label>
+                <label class="showplace__label"  for="bell-rock">Гора-Колокол</label>
               </li>
               <li class="showplace__item">
                 <input class="showplace__checkbox" type="checkbox" name="slide-park" id="slide-park" checked />
-                <label class="showplace__label for="slide-park">Слайд-парк</label>
+                <label class="showplace__label" for="slide-park">Слайд-парк</label>
               </li>
               <li class="showplace__item">
                 <input class="showplace__checkbox" type="checkbox" name="red-rocks" id="red-rocks" />
-                <label class="showplace__label for="red-rocks">Красные скалы</label>
+                <label class="showplace__label" for="red-rocks">Красные скалы</label>
               </li>
             </ul>
           </fieldset>
@@ -123,6 +124,7 @@
             </p>
           </fieldset>
           <button class="reviews__submit" type="submit">Отправить отзыв</button>
+          <p>* — обязательные поля</p>
         </form>
       </div>
     </section>
@@ -151,6 +153,7 @@
       </div>
     </div>
   </footer>
+</div>
 </body>
 
 </html>
