@@ -36,11 +36,16 @@
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
+  text-align: center;
+
+  .holder();
 }
 
 .advantages__subject {
   font-size: 14px;
   line-height: 26px;
+
+  .holder();
 }
 
 .advantages__list {
@@ -66,10 +71,13 @@
 
 .advantages__item--bridge {
   background-color: #81b3d2;
-  display: grid;
-  grid-template-columns: 1fr min-content;
-  grid-column-start: 1;
-  grid-column-end: -1;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr min-content;
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
 
   &::before {
     content: "";
@@ -91,6 +99,8 @@
   line-height: 26px;
   font-weight: bold;
   color: white;
+
+  .holder();
 }
 
 .advantages__title--dark {
@@ -101,6 +111,8 @@
   font-size: 14px;
   line-height: 21px;
   color: white;
+
+  .holder();
 }
 
 .advantages__numbering--dark {
@@ -111,6 +123,8 @@
   font-size: 14px;
   line-height: 21px;
   color: white;
+
+  .holder();
 }
 
 .advantages__description--dark {
@@ -131,9 +145,13 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
+
+  .holder();
 }
 
 .advantages__subdescription {
   font-size: 14px;
   line-height: 21px;
+
+  .holder();
 }
