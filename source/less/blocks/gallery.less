@@ -11,6 +11,10 @@
 
 .gallery__list {
   display: grid;
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .gallery__item {

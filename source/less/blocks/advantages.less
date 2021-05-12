@@ -133,8 +133,11 @@
 
 .advantages__sublist {
   padding: 0;
-  display: flex;
-  grid-template-columns: repeat(1, 3fr);
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .advantages__subitem {
