@@ -1,3 +1,22 @@
+.gallery {
+  display: grid;
+  width: 320px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: @tablet-width) {
+    width: 648px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 .gallery__title {
   font-weight: bold;
   font-size: 18px;
@@ -11,10 +30,28 @@
 
 .gallery__list {
   display: grid;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .gallery__item {
   list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  &:first-child {
+    @media (min-width: @tablet-width) {
+      grid-column-start: 1;
+      grid-column-end: -1;
+    }
+  }
 }
 
 .gallery__caption {
